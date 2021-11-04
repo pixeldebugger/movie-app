@@ -2,7 +2,7 @@
   <div class="card mx-auto" style="width:18rem;">
     <img *ngIf="movie?.poster_path" class="card-img-top" src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/{{movie.poster_path}}"
          [alt]="movie.title ? movie.title : movie.name">
-    <img *ngIf="!movie?.poster_path" src="assets/images/default-image.png"
+    <img *ngIf="!movie?.poster_path" src="assets/images/film.jpg"
          [alt]="movie.title ? movie.title : movie.name">
 
     <div class="card-body">

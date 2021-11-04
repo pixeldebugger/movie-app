@@ -1,3 +1,7 @@
+img {
+  min-height: 430px;
+}
+
 .movie-info {
   margin-top: 1em;
 }

@@ -17,21 +17,26 @@
     </div>
   </form>
 
-  <div *ngIf="searchRes">
-    <app-movie-item
-      *ngFor="let movie of searchRes"
-      [movie]="movie"
-    ></app-movie-item>
+  <div *ngIf="searchRes" class="container-fluid p-0 m-0
+                align-items-center
+                justify-content-center d-flex">
+    <div class="row w-100 p-0 w-0">
+      <app-movie-item
+        *ngFor="let movie of searchRes"
+        [movie]="movie"
+      ></app-movie-item>
+    </div>
+
   </div>
 
   <div *ngIf="!searchRes" class="container-fluid p-0 m-0
                 align-items-center
                 justify-content-center d-flex">
     <div class="row w-100 p-0 w-0">
-        <app-movie-item
-          *ngFor="let movie of movies"
-          [movie]="movie"
-        ></app-movie-item>
+      <app-movie-item
+        *ngFor="let movie of movies"
+        [movie]="movie"
+      ></app-movie-item>
     </div>
 
   </div>
