@@ -1,6 +1,8 @@
 <div class="col-lg-4 mb-2">
   <div class="card mx-auto" style="width:18rem;">
-    <img class="card-img-top" src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/{{movie.poster_path}}"
+    <img *ngIf="movie?.poster_path" class="card-img-top" src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/{{movie.poster_path}}"
+         [alt]="movie.title ? movie.title : movie.name">
+    <img *ngIf="!movie?.poster_path" src="assets/images/default-image.png"
          [alt]="movie.title ? movie.title : movie.name">
 
     <div class="card-body">
@@ -10,7 +12,6 @@
             {{movie.title}}
           </h5>
         </div>
-<!--        <div class="imax-logo"></div>-->
       </div>
       <div class="movie-info">
         <div class="info-section col">
