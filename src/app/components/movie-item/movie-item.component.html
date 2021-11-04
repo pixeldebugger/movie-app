@@ -1,0 +1,63 @@
+<div class="col-lg-4 mb-2">
+  <div class="card mx-auto" style="width:18rem;">
+    <img class="card-img-top" src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/{{movie.poster_path}}"
+         [alt]="movie.title ? movie.title : movie.name">
+
+    <div class="card-body">
+      <div>
+        <div>
+          <h5 class="card-title">
+            {{movie.title}}
+          </h5>
+        </div>
+<!--        <div class="imax-logo"></div>-->
+      </div>
+      <div class="movie-info">
+        <div class="info-section col">
+          <label>Release date</label>
+          <span>{{movie.release_date}}</span>
+        </div><!--date,time-->
+        <div class="info-section col">
+          <label>Votes</label>
+          <span>{{movie.vote_average}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--&lt;!&ndash;movie-header&ndash;&gt;-->
+<!--<div class="movie-header">-->
+<!--  <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/{{movie.poster_path}}"-->
+<!--       [alt]="movie.title ? movie.title : movie.name">-->
+<!--</div>-->
+<!--&lt;!&ndash;movie-header end&ndash;&gt;-->
+
+<!--<div class="movie-content">-->
+<!--  <div class="movie-content-header">-->
+<!--    <a href="#">-->
+<!--      <h3 class="movie-title">{{movie.title}}</h3>-->
+<!--    </a>-->
+<!--    <div class="imax-logo"></div>-->
+<!--  </div>-->
+<!--  <div class="movie-info">-->
+<!--    <div class="info-section">-->
+<!--      <label>Release date</label>-->
+<!--      <span>{{movie.release_date}}</span>-->
+<!--    </div>&lt;!&ndash;date,time&ndash;&gt;-->
+<!--    <div class="info-section">-->
+<!--      <label>Votes</label>-->
+<!--      <span>{{movie.vote_average}}</span>-->
+<!--    </div>-->
+<!--    &lt;!&ndash;screen&ndash;&gt;-->
+<!--    &lt;!&ndash;      <div class="info-section">&ndash;&gt;-->
+<!--    &lt;!&ndash;        <label>Row</label>&ndash;&gt;-->
+<!--    &lt;!&ndash;        <span>F</span>&ndash;&gt;-->
+<!--    &lt;!&ndash;      </div>&lt;!&ndash;row&ndash;&gt;&ndash;&gt;-->
+<!--    &lt;!&ndash;      <div class="info-section">&ndash;&gt;-->
+<!--    &lt;!&ndash;        <label>Seat</label>&ndash;&gt;-->
+<!--    &lt;!&ndash;        <span>21,22</span>&ndash;&gt;-->
+<!--    &lt;!&ndash;      </div>&lt;!&ndash;seat&ndash;&gt;&ndash;&gt;-->
+<!--  </div>-->
+<!--</div>&lt;!&ndash;movie-content&ndash;&gt;-->
+<!--</div>&lt;!&ndash;movie-card&ndash;&gt;-->

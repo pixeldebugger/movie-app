@@ -1,0 +1,35 @@
+/*.imax-logo {*/
+/*  width: 50px;*/
+/*  height: 15px;*/
+/*  background: url("https://6a25bbd04bd33b8a843e-9626a8b6c7858057941524bfdad5f5b0.ssl.cf5.rackcdn.com/media_kit/3e27ede823afbf139c57f1c78a03c870.jpg") no-repeat;*/
+/*  background-size: contain;*/
+/*  display: table-cell;*/
+/*  float: right;*/
+/*  position: relative;*/
+/*  margin-top: 5px;*/
+/*}*/
+.movie-info {
+  margin-top: 1em;
+}
+
+.info-section {
+  display: table-cell;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.info-section:first-of-type {
+  text-align: left;
+}
+
+.info-section label {
+  display: block;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: .5em;
+  font-size: 9px;
+}
+
+.info-section span {
+  font-weight: 700;
+  font-size: 11px;
+}
